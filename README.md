@@ -1,10 +1,10 @@
 # NEU25.org
 
-A custom site for the Northeastern Class of 2025 • More documentation coming soon!
+A custom site for the Northeastern Class of 2025
 
 ## Live Site
 
-THe live site can be found at [neu25.org](https://www.neu25.org)
+The live site can be found at [neu25.org](https://www.neu25.org)
 
 ## Structure
 
@@ -15,3 +15,19 @@ THe live site can be found at [neu25.org](https://www.neu25.org)
 ├── styles
 └── index.html
 ```
+
+## Getting Started
+
+> How to set up neu25.org locally
+
+### Obtaining the language and code
+
+1. Make sure your computer has `git`, and run
+
+```bash
+git clone git@github.com:nu25/neu25.org.git
+```
+
+in the directory where you want to clone the site.
+
+2. Locate the `neu25.org` folder and open up the `index.html` file to see the site!
