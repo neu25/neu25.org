@@ -11,8 +11,8 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   .landing-hero {
-    gap: 4rem;
     flex-direction: row;
+    gap: 4rem;
     align-items: center;
   }
 }
@@ -20,4 +20,64 @@ h1 {
 .hoosky-image-wrapper {
   margin-left: -1rem; /* Undo image's included padding */
   width: min(25vw, 15rem);
+}
+
+.donor-wall {
+  padding: 1.5rem 2rem;
+  border-radius: var(--base-border-radius);
+  border: 1px solid var(--hoosky-red);
+}
+
+.wall {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wall p {
+  font-family: var(--hoosky-font);
+  font-size: 2em;
+  color: var(--hoosky-blue);
+}
+
+@media only screen and (min-width: 576px) {
+  .wall {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.75rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.donation-info {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: var(--base-border-radius);
+  border: 1px solid var(--hoosky-red);
+}
+
+.donation-info p:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+/* Counter style at-rule */
+@counter-style single-emoji {
+  system: cyclic;
+  symbols: "\2728";
+  suffix: " ";
+}
+
+.feature-list {
+  list-style-type: single-emoji;
+}
+
+.feature-list li {
+  padding-left: 0.25rem;
+}
+
+.feature-list li:not(:last-of-type) {
+  margin-bottom: 0.75rem;
 }
