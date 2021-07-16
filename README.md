@@ -31,3 +31,7 @@ git clone git@github.com:nu25/neu25.org.git
 in the directory where you want to clone the site.
 
 2. Locate the `neu25.org` folder and open up the `index.html` file to see the site!
+
+### Making changes
+
+All changes should be made either on the `dev` branch or on a feature branch (`user/feature`). All pull requests should merge into `dev`.

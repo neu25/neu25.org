@@ -1,5 +1,5 @@
 .landing-hero {
-  margin-bottom: 7.5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -11,7 +11,7 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   .landing-hero {
-    gap: 5rem;
+    gap: 4rem;
     flex-direction: row;
     align-items: center;
   }
@@ -19,5 +19,5 @@ h1 {
 
 .hoosky-image-wrapper {
   margin-left: -1rem; /* Undo image's included padding */
-  width: min(35vw, 20rem);
+  width: min(25vw, 15rem);
 }
