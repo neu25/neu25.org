@@ -4,6 +4,7 @@
 :root {
   --base-border-radius: 10px;
   --hoosky-black: hsl(246, 6%, 9%);
+  --hoosky-black-muted: hsl(246, 6%, 12%);
   --hoosky-green: hsl(120, 65%, 42%);
   --hoosky-red: hsl(354, 77%, 47%);
   --hoosky-red-hovered: hsl(354, 77%, 37%);
@@ -143,15 +144,25 @@ select {
   border-radius: var(--base-border-radius);
   text-decoration: none;
   color: var(--hoosky-white);
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
 }
 
 .button span {
   margin-left: 0.25rem;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .button:hover {
   background-color: var(--hoosky-red-hovered);
+}
+
+.button:hover span {
+  opacity: 1;
 }
 
 /* Default footer */
