@@ -1,3 +1,5 @@
+<img src="images/hoosky.png" alt="Hoosky" width="175px" /><br />
+
 # NEU25.org
 
 A custom site for the Northeastern Class of 2025
