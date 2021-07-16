@@ -38,7 +38,7 @@ h1 {
 .wall p {
   font-family: var(--hoosky-font);
   font-size: 2em;
-  color: var(--hoosky-blue);
+  color: var(--hoosky-green);
 }
 
 @media only screen and (min-width: 576px) {
