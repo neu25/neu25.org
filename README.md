@@ -11,5 +11,7 @@ THe live site can be found at [neu25.org](https://www.neu25.org)
 ```
 .
 ├── README.md (this)
+├── images
+├── styles
 └── index.html
 ```
