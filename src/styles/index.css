@@ -21,6 +21,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.title {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .landing-hero {
     -webkit-box-orient: horizontal;
