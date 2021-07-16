@@ -1,3 +1,7 @@
+section p:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
 .landing-hero {
   margin-bottom: 5rem;
   display: flex;
@@ -18,7 +22,7 @@ h1 {
 }
 
 .hoosky-image-wrapper {
-  margin-left: -1rem; /* Undo image's included padding */
+  margin-left: -0.95rem; /* Undo image's included padding */
   width: min(25vw, 15rem);
 }
 
@@ -48,11 +52,10 @@ h1 {
 .wall li {
   font-family: var(--hoosky-font);
   font-size: 1.25em;
-  color: var(--hoosky-green);
   color: var(--hoosky-white);
   padding: 0.375rem 1rem;
   border: 1px solid var(--hoosky-green);
-  border-radius: var(--base-border-radius);
+  border-radius: calc(var(--base-border-radius) / 1.5);
 }
 
 .wall li::after {
@@ -63,10 +66,9 @@ h1 {
   .wall {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 2rem;
+    column-gap: 1rem;
     row-gap: 0.75rem;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -75,10 +77,6 @@ h1 {
   padding: 1.5rem 2rem;
   border-radius: var(--base-border-radius);
   border: 1px solid var(--hoosky-red);
-}
-
-.donation-info p:not(:last-of-type) {
-  margin-bottom: 1.5rem;
 }
 
 /* Counter style at-rule */
@@ -98,4 +96,11 @@ h1 {
 
 .feature-list li:not(:last-of-type) {
   margin-bottom: 0.75rem;
+}
+
+.contribute {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: var(--base-border-radius);
+  border: 1px dashed var(--hoosky-red);
 }
