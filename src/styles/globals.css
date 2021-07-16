@@ -3,7 +3,7 @@
 /* Set CSS variables */
 :root {
   --base-border-radius: 10px;
-  --hoosky-black: hsl(246 6% 9%);
+  --hoosky-black: hsl(246, 6%, 9%);
   --hoosky-red: hsl(354, 77%, 47%);
   --hoosky-white: hsl(354, 0%, 99%);
 
@@ -119,7 +119,7 @@ select {
   html:focus-within {
    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

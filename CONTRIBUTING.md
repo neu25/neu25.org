@@ -10,7 +10,7 @@ Do not be afraid to have frequent commits. As a matter of fact, frequent commits
 
 # Commit Messages
 
-Commit messages are designed to describe what has changed, and why. Ocassionally, you might also explain how.
+Commit messages are designed to describe what has changed, and why. Occasionally, you might also explain how.
 
 A commit message comes in two components: subject line and body. The subject line should be imperative and succinct. Thus, it should begin with a verb, such as "change" or "add". A good guide to follow is "this commit will [subject line]". The [subject line] would be the head of your commit message. For instance, "this commit will [add peanut butter and jelly to the sandwich]" The subject line would be "Add peanut butter and jelly to the sandwich". The subject line should be _capitalized_ and do not end it with a period.
 

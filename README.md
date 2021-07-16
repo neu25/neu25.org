@@ -1,4 +1,4 @@
-<img src="images/hoosky.png" alt="Hoosky" width="175px" /><br />
+<img src="src/images/hoosky.png" alt="Hoosky" width="175px" /><br />
 
 # NEU25.org
 
