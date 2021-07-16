@@ -1,0 +1,21 @@
+.landing-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-hero {
+    gap: 5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hoosky-image-wrapper {
+  width: min(35vw, 20rem);
+}
