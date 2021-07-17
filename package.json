@@ -1,0 +1,31 @@
+{
+  "name": "neu25.org",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md,html}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^4.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
+    "nunjucks": "^3.2.3",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "through2": "^2.0.5",
+    "webpack": "^5.45.1"
+  }
+}

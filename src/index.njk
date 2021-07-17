@@ -1,48 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "templates/layouts/base.njk" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+{% block head %}
   <!-- Primary Meta Tags -->
   <title>Northeastern Class of 2025</title>
-  <meta name="title" content="NEU Class of 2025">
-  <meta name="description" content="A custom site for the Northeastern Class of 2025">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.neu25.org/">
-  <meta property="og:title" content="NEU Class of 2025">
-  <meta property="og:description" content="A custom site for the Northeastern Class of 2025">
-  <meta property="og:image" content="https://www.neu25.org/images/splash.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.neu25.org/">
-  <meta property="twitter:title" content="NEU Class of 2025">
-  <meta property="twitter:description" content="A custom site for the Northeastern Class of 2025">
-  <meta property="twitter:image" content="https://www.neu25.org/images/splash.jpg">
-
-  <!-- Load fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <meta name="title" content="{{ site.title }}">
+  <meta name="description" content="{{ site.description }}">
 
   <!-- Load styles -->
-  <link rel="stylesheet" href="styles/globals.css?v=0.1.0">
-  <link rel="stylesheet" href="styles/index.css?v=0.1.0">
-</head>
+  <link rel="stylesheet" href='css/index.css'>
+{% endblock %}
 
-<body>
+{% block body %}
   <main>
     <section class="landing-hero">
       <div class="hoosky-image-wrapper"><img src="images/hoosky.png" alt="Hoosky"></div>
@@ -97,7 +65,8 @@
 
       <ul class="feature-list">
         <li>Your own exclusive Hoosky Supporter Discord role, hoisted to the top of the member list, with any color you
-          want!</li>
+          want!
+        </li>
         <li>Prioritized feature requests</li>
         <li>Inclusion in our online donor wall (above)</li>
         <li>...and more to come! (have an idea? let us know!)</li>
@@ -109,10 +78,17 @@
     <section id="contribute" class="contribute">
       <h2>Contribute</h2>
       <p>
-        We're currently working on <a href="https://github.com/nu25/hoosky-bot" target="blank"
-          rel="noopener noreferrer">Hoosky Bot &#x2197;</a> (a
-        custom Discord bot) and <a href="https://github.com/nu25/neu25.org" target="blank"
-          rel="noopener noreferrer">NEU25.org &#x2197;</a> (this site).
+        We're currently working on
+        <a href="https://github.com/nu25/hoosky-bot" target="blank"
+           rel="noopener noreferrer">
+          Hoosky Bot &#x2197;
+        </a>
+        (a custom Discord bot) and
+        <a href="https://github.com/nu25/neu25.org" target="blank"
+           rel="noopener noreferrer">
+          NEU25.org &#x2197;
+        </a>
+        (this site).
       </p>
       <p>
         If you have any suggestions, ideas, or would like to help out, connect with us on Discord!
@@ -128,6 +104,4 @@
     </p>
     <p>&copy; 2021 Northeastern Class of 2025 &bull; All Rights Reserved</p>
   </footer>
-</body>
-
-</html>
+{% endblock %}
