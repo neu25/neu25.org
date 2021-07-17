@@ -103,7 +103,7 @@ h1 {
 }
 
 .wall li::after {
-  content: " ⭐️";
+  content: ' ⭐️';
 }
 
 @media only screen and (min-width: 576px) {
@@ -134,8 +134,8 @@ h1 {
 /* Counter style at-rule */
 @counter-style single-emoji {
   system: cyclic;
-  symbols: "\2728";
-  suffix: " ";
+  symbols: '\2728';
+  suffix: ' ';
 }
 
 .feature-list {
