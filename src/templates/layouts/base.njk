@@ -15,22 +15,25 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.neu25.org/">
+  <meta property="og:url" content="{{ site.url }}/">
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="https://www.neu25.org/images/splash.jpg">
+  <meta property="og:image" content="{{ site.url }}/images/splash.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.neu25.org/">
+  <meta property="twitter:url" content="{{ site.url }}/">
   <meta property="twitter:title" content="{{ site.title }}">
   <meta property="twitter:description" content="{{ site.description }}">
-  <meta property="twitter:image" content="https://www.neu25.org/images/splash.jpg">
+  <meta property="twitter:image" content="{{ site.url }}/images/splash.jpg">
 
   <!-- Load fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+  <!-- Load global styles -->
+  <link rel="stylesheet" href='css/globals.css'>
 
   {% block head %}
   {% endblock %}
