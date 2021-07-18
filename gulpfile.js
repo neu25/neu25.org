@@ -55,13 +55,9 @@ function postBuild(cb) {
   rimraf('./dist/rev-manifest.json', cb);
 }
 
-const build = gulp.series([clean, assets, html, css, hash, postBuild]);
+const build = gulp.series([clean, assets, html, css, hash]);
 
-gulp.task('build', build);
-
-function watch() {
-  gulp.series([clean, assets, html, css, hash])();
-
+async function watch() {
   browserSync.init({
     server: {
       baseDir: './dist',
@@ -76,4 +72,5 @@ function watch() {
   gulp.watch('./src/**/**.*').on('change', browserSync.reload);
 }
 
-gulp.task('watch', watch);
+gulp.task('build', gulp.series([build, postBuild]));
+gulp.task('watch', gulp.series([build, watch]));
