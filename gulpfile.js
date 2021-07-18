@@ -57,3 +57,12 @@ function postBuild(cb) {
 const build = gulp.series([clean, assets, html, css, hash, postBuild]);
 
 gulp.task('build', build);
+
+function watch() {
+  gulp.series([clean, assets, html, css, hash])();
+  gulp.watch('./src/**/*.njk', gulp.series([html, css, hash]));
+  gulp.watch('./src/**/*.css', gulp.series([html, css, hash]));
+  gulp.watch('./public/**/*', gulp.series(assets));
+}
+
+gulp.task('watch', watch);

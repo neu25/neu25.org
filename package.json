@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
+    "watch": "gulp watch",
     "prepare": "husky install"
   },
   "lint-staged": {
