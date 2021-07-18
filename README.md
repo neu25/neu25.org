@@ -38,20 +38,22 @@ in the directory where you want to clone the site.
 
 ### Local development
 
-Install dependencies and set up pre-commit hooks with
+1. Install dependencies and set up pre-commit hooks with
 
 ```bash
 npm install
 npm run prepare
 ```
 
-Start watching for changes with
+2. Start watching for changes with
 
 ```bash
 npm run watch
 ```
 
-Build the site with
+This command will open [localhost:3000](http://localhost:3000/).
+
+3. Build the site with
 
 ```bash
 npm run build
