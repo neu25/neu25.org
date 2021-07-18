@@ -36,6 +36,31 @@ in the directory where you want to clone the site.
 
 2. Locate the `neu25.org` folder and open up the `index.html` file to see the site!
 
+### Local development
+
+1. Install dependencies and set up pre-commit hooks with
+
+```bash
+npm install
+npm run prepare
+```
+
+2. Start watching for changes with
+
+```bash
+npm run watch
+```
+
+This command will open [localhost:3000](http://localhost:3000/).
+
+3. Build the site with
+
+```bash
+npm run build
+```
+
+Open the `/dist/index.html` to see the site.
+
 ### Making changes
 
 All changes should be made either on the `dev` branch or on a feature branch (`user/feature`). All pull requests should merge into `dev`.

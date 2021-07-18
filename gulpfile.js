@@ -5,6 +5,7 @@ const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
 const gulpNunjucks = require('gulp-nunjucks');
 const postcss = require('gulp-postcss');
+const browserSync = require('browser-sync').create();
 
 function clean(cb) {
   rimraf('./dist', cb);
@@ -54,6 +55,22 @@ function postBuild(cb) {
   rimraf('./dist/rev-manifest.json', cb);
 }
 
-const build = gulp.series([clean, assets, html, css, hash, postBuild]);
+const build = gulp.series([clean, assets, html, css, hash]);
 
-gulp.task('build', build);
+async function watch() {
+  browserSync.init({
+    server: {
+      baseDir: './dist',
+    },
+    injectChanges: false,
+  });
+
+  gulp.watch('./src/**/*.njk', gulp.series([html, css, hash]));
+  gulp.watch('./src/**/*.css', gulp.series([html, css, hash]));
+  gulp.watch('./public/**/*', gulp.series(assets));
+
+  gulp.watch('./src/**/**.*').on('change', browserSync.reload);
+}
+
+gulp.task('build', gulp.series([build, postBuild]));
+gulp.task('watch', gulp.series([build, watch]));
