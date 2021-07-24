@@ -35,7 +35,7 @@ The live website can be found at [www.neu25.org](https://www.neu25.org)
 1. Make sure your computer has `git`, and run
 
 ```bash
-git clone git@github.com:nu25/neu25.org.git
+git clone git@github.com:neu25/neu25.org.git
 ```
 
 in the directory where you want to clone the website.
