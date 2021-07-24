@@ -144,5 +144,5 @@ h1 {
   margin-top: 2.5rem;
   padding: 1.5rem 2rem;
   border-radius: var(--base-border-radius);
-  border: 1px dashed var(--hoosky-red);
+  border: 1px solid var(--hoosky-red);
 }
