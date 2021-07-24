@@ -1,4 +1,4 @@
-<img src="src/images/hoosky.png" alt="Hoosky" width="175px" /><br />
+<img src="public/images/hoosky.png" alt="Hoosky" width="175px" /><br />
 
 # NEU25.org
 
@@ -13,11 +13,17 @@ The live website can be found at [www.neu25.org](https://www.neu25.org)
 ```
 .
 ├── README.md (this)
+└── public
+    └── images
 └── src
-    ├── images
-    └── styles
+    └── css
         └── globals.css (global styles)
-    └── index.html
+    └── data
+        └── site.json (global site variables)
+    └── templates
+        └── layouts
+            └── base.njk (base layout)
+    └── index.njk (landing page)
 ```
 
 ## Getting started
@@ -29,38 +35,48 @@ The live website can be found at [www.neu25.org](https://www.neu25.org)
 1. Make sure your computer has `git`, and run
 
 ```bash
-git clone git@github.com:neu25/neu25.org.git
+git clone git@github.com:nu25/neu25.org.git
 ```
 
-in the directory where you want to clone the site.
+in the directory where you want to clone the website.
 
-2. Locate the `neu25.org` folder and open up the `index.html` file to see the site!
+2. Ensure Node.js and NPM (the package manager for Node.js) are installed. Install from here: https://nodejs.org/en/
 
-### Local development
-
-1. Install dependencies and set up pre-commit hooks with
+3. In the code folder, run
 
 ```bash
 npm install
 npm run prepare
 ```
 
-2. Start watching for changes with
+to install all necessary dependencies and libraries.
+
+4. You're ready!
+
+### Local development
+
+1. Start watching for changes with
 
 ```bash
 npm run watch
 ```
 
-This command will open [localhost:3000](http://localhost:3000/).
+This command will open the website at [localhost:3000](http://localhost:3000/).
 
-3. Build the site with
+2. To build a production version of the website, run
 
 ```bash
 npm run build
 ```
 
-Open the `/dist/index.html` to see the site.
+Open the file at `/dist/index.html` to see the site.
 
-### Making changes
+3. Commit your changes with Git - see next section.
 
-All changes should be made either on the `dev` branch or on a feature branch (`user/feature`). All pull requests should merge into `dev`.
+### Making changes to the code
+
+1. We'll use GitHub Pull Requests to merge your changes onto the `main` and `dev` branches, so commit your changes onto your own branch.
+
+2. Branch naming: name your branches as `<username>/tiny_description`.
+
+3. All pull requests should merge into `dev`.
